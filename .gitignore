@@ -1,0 +1,8 @@
+demo.*
+bin/
+.idea/
+.code/
+*.log
+*.exe
+main
+db/data/

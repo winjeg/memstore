@@ -1,9 +1,9 @@
-# file-store
+# mem-store
 一个内存持久化的 kv 存储库
 
 # 设计思路
 - memory-mapped-file：内存映射文件 高性能文件读写 -> 操作系统负责刷盘（也可以手动刷）
-- fileStore => 对应用提供的API，set, get, delete, compact ....
+- mem_store => 对应用提供的API，set, get, delete, compact ....
 - kvUnit   => 最小的kv单元 get, set, delete 
 - MetaFile => 纯二进制实现  kv，元信息，Key开始位置，结束为止，Value开始位置和结束位置，MetaFile当前写到的位置
 - DataFile => 实际存储Key和value，以及当前写到什么Pos
